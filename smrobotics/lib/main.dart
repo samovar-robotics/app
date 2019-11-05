@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:smrobotics/config.dart';
+import 'config.dart';
+import 'homePage.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,9 +14,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: primaryColor,
         accentColor: secondaryColor,
-        indicatorColor: secondaryColor
+        indicatorColor: secondaryColor,
+        snackBarTheme: SnackBarThemeData(actionTextColor: Colors.white)
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MainPage(),
     );
   }
 }
